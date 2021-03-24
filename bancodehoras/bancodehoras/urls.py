@@ -11,7 +11,7 @@ urlpatterns = [
     path('grappelli/', include('grappelli.urls')),
     path('admin/', admin.site.urls),
     path('', views_core.dashboard, name='escolha_dashboard'),
-    path('installsystem', views_core.isntalar_sistema, name='install_system'),
+    path('installsystem', views_core.instalar_sistema, name='install_system'),
 
     # Relatórios
     path('relatorio/', views_rel.relatorio, name='relatorio'),

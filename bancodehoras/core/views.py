@@ -2,14 +2,14 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 
-from core.controller import FuncionalidadesCore
-from core.models import *
-from movimentacao.controller import FuncionalidadesMovimentacao
-from movimentacao.views import seleciona_dados
-from core import constants
+from bancodehoras.core.controller import FuncionalidadesCore
+from bancodehoras.core.models import *
+from bancodehoras.movimentacao.controller import FuncionalidadesMovimentacao
+from bancodehoras.movimentacao.views import seleciona_dados
+from bancodehoras.core import constants
 
 
-def isntalar_sistema(request):
+def instalar_sistema(request):
     func = FuncionalidadesCore()
     if func.superuser(request):
         if len(Hash.objects.all()) == 0:
