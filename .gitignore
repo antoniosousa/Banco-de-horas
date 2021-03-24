@@ -110,3 +110,5 @@ media/
 **/migrations/**
 !**/migrations
 !**/migrations/__init__.py
+/requirements_dev_neovim.txt
+/bancodehoras/.idea/
