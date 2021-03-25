@@ -2,11 +2,11 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 
-from bancodehoras.core.controller import FuncionalidadesCore
-from bancodehoras.core.models import *
-from bancodehoras.movimentacao.controller import FuncionalidadesMovimentacao
-from bancodehoras.movimentacao.views import seleciona_dados
-from bancodehoras.core import constants
+from core.controller import FuncionalidadesCore
+from core.models import *
+from movimentacao.controller import FuncionalidadesMovimentacao
+from movimentacao.views import seleciona_dados
+from core import constants
 
 
 def instalar_sistema(request):
